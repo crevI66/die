@@ -1,5 +1,6 @@
 # install dwm
-  
+-------
+
   sudo pacman -S base-devel git nano
   git clone https://git.suckless.org/dwm
   git clone https://git.suckless.org/st
@@ -23,7 +24,11 @@
   }
   alt + shift + q(exit dwm)
   
+-------
+
 # install doas
+-------
+
   git clone https://aur.archlinux.org/opendoas-sudo.git
   cd opendoas-sudo/
   su
@@ -38,4 +43,4 @@
   su
   doas -C /etc/doas.conf
 
-  
+-------
