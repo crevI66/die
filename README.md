@@ -29,18 +29,18 @@
 # install doas
 -------
 
-  git clone https://aur.archlinux.org/opendoas-sudo.git
-  cd opendoas-sudo/
-  su
-  pacman -Rsn sudo
-  exit
-  makepkg -si
-  doas nano /etc/doas.conf
-  {
-    permit persist :wheel
-  }
-  usermod -G wheel worm
-  su
-  doas -C /etc/doas.conf
+    git clone https://aur.archlinux.org/opendoas-sudo.git
+    cd opendoas-sudo/
+    su
+    pacman -Rsn sudo
+    exit
+    makepkg -si
+    doas nano /etc/doas.conf
+    {
+      permit persist :wheel
+    }
+    usermod -G wheel worm
+    su
+    doas -C /etc/doas.conf
 
 -------
