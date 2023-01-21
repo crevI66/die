@@ -1,22 +1,18 @@
 # install dwm
 -------
 
-    sudo pacman -S base-devel git nano
+    sudo pacman -S base-devel xorg-xinit xorg git nano
     git clone https://git.suckless.org/dwm
     git clone https://git.suckless.org/st
-    sudo pacman -S xorg-server xorg-xinit libxft libxinerama libx11 webkit2gtk
+    git clone https://git.suckless.org/dmenu
+    //alt: git clone https://github.com/crevI66/fucki3
+    cd dwm ## Do this step also with st and dmenu
+    sudo make clean install
     cd
     nano .xinitrc
     {
       exec dwm
     }
-    cd st/ && sudo make clean install && cd ../dwm/
-    sudo nano config.h
-    {
-      //CHANGE /bin/sh/ TO: /usr/local/bin/st             (use 'which st' to locate st location
-      //CHANGE Mod1Mask(alt) TO Mod4Mask(win)
-    }
-    sudo make clean install
     cd
     nano .bash_profile
     {
@@ -30,17 +26,15 @@
 -------
 
     git clone https://aur.archlinux.org/opendoas-sudo.git
-    cd opendoas-sudo/
-    su
-    pacman -Rsn sudo
-    exit
-    makepkg -si
-    doas nano /etc/doas.conf
+    sudo make clean install
+    nano /etc/doas.conf
     {
-      permit persist :wheel
+        permit persist :wheel
+        
     }
-    usermod -G wheel worm
-    su
     doas -C /etc/doas.conf
-
+    chown -c root:root /etc/doas.conf
+    chmod -c 0400 /etc/doas.conf
+    doas -Rsn sudo
+    
 -------
