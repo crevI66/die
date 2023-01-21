@@ -5,7 +5,7 @@
     git clone https://git.suckless.org/dwm
     git clone https://git.suckless.org/st
     git clone https://git.suckless.org/dmenu
-    //alt: git clone https://github.com/crevI66/fucki3
+    //alt: git clone https://github.com/crevI66/die
     cd dwm ## Do this step also with st and dmenu
     sudo make clean install
     cd
