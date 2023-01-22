@@ -1,3 +1,6 @@
+alias nnn='nnn -d -e -H -r'
+
+
 # install dwm
 -------
 
