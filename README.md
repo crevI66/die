@@ -1,8 +1,15 @@
 # package
     xorg xorg-xinit discord nnn lxappearance qt5ct arc-gtk-theme arc-icon-theme base-devel brightnessctl pavucontrol firefox flameshot keepassxc git vim
 # .bashrc
-    alias nnn='nnn -d -e -H -r'
-
+    alias nnn="nnn -d -e -H -r"
+    alias ls -F --color=auto --group-directories-first -a
+    alias mkdir="mkdir -pv"
+    alias rm="rm -iv" 
+    alias cp="cp -iv" 
+    alias mv="mv -iv"
+    alias stfu='sudo shutdown -h now'
+    alias mostused="  history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n20"
+    echo pacman -Q | wc -l
 # .xinitrc
     exec dwm
     mpd &
