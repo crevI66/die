@@ -1,3 +1,5 @@
+# package
+    mpv mpd ncmpcpp xorg xorg-xinit discord nnn lxappearance qt5ct arc-gtk-theme arc-icon-theme base-devel brightnessctl pavucontrol firefox flameshot keepassxc git 
 # .bashrc
     alias nnn='nnn -d -e -H -r'
 
@@ -6,28 +8,15 @@
     mpd &
 
 # install dwm
-
-    sudo pacman -S base-devel xorg-xinit xorg git nano
     git clone https://git.suckless.org/dwm
     git clone https://git.suckless.org/st
     git clone https://git.suckless.org/dmenu
     //alt: git clone https://github.com/crevI66/die
     cd dwm ## Do this step also with st and dmenu
     sudo make clean install
-    cd
-    nano .xinitrc
-    {
-      exec dwm
-    }
-    cd
-    nano .bash_profile
-    {
-      startx
-    }
     alt + shift + q(exit dwm)
 
 # install doas
-
     git clone https://aur.archlinux.org/opendoas-sudo.git
     sudo make clean install
     nano /etc/doas.conf
