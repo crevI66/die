@@ -1,5 +1,5 @@
 # package
-    mpv mpd ncmpcpp xorg xorg-xinit discord nnn lxappearance qt5ct arc-gtk-theme arc-icon-theme base-devel brightnessctl pavucontrol firefox flameshot keepassxc git vim
+    xorg xorg-xinit discord nnn lxappearance qt5ct arc-gtk-theme arc-icon-theme base-devel brightnessctl pavucontrol firefox flameshot keepassxc git vim
 # .bashrc
     alias nnn='nnn -d -e -H -r'
 
