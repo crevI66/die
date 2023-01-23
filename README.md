@@ -1,8 +1,11 @@
-alias nnn='nnn -d -e -H -r'
+# .bashrc
+    alias nnn='nnn -d -e -H -r'
 
+# .xinitrc
+    exec dwm
+    mpd &
 
 # install dwm
--------
 
     sudo pacman -S base-devel xorg-xinit xorg git nano
     git clone https://git.suckless.org/dwm
@@ -22,11 +25,8 @@ alias nnn='nnn -d -e -H -r'
       startx
     }
     alt + shift + q(exit dwm)
-  
--------
 
 # install doas
--------
 
     git clone https://aur.archlinux.org/opendoas-sudo.git
     sudo make clean install
@@ -40,4 +40,4 @@ alias nnn='nnn -d -e -H -r'
     chmod -c 0400 /etc/doas.conf
     doas -Rsn sudo
     
--------
+
