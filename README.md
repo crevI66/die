@@ -20,10 +20,10 @@ Edit /etc/pacman.conf and under [options] add ILoveCandy and Color. (both case s
 
 -------
 
-
+//vulkan-intel lib32-vulkan-intel
 
 # package
-    bluez bluez-utils virtualbox linux-headers nvidia nvidia-settings vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader pacman-contrib reflector xorg xorg-xinit discord nnn lxappearance qt5ct arc-gtk-theme arc-icon-theme base-devel brightnessctl pavucontrol firefox flameshot keepassxc git vim
+    bluez bluez-utils virtualbox linux-headers nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader pacman-contrib reflector xorg xorg-xinit discord nnn lxappearance qt5ct arc-gtk-theme arc-icon-theme base-devel brightnessctl pavucontrol firefox flameshot keepassxc git vim
     
 # bluetoothctl
     power on 
