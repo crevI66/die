@@ -1,13 +1,12 @@
 -------
-|Just watch what you're doing when using pacman and actually read PKGBUILDs if you're installing stuff from the AUR and  you should be ok. Do not update literally every minute like some morons tell you to. Update weekly and if you're going to install a new package and haven't done so in a while.
+Update weekly
 
-Do NOT check for updates by running "pacman -Syu" and canceling. This can fuck you up. Install pacman-contrib and run "checkupdates" instead.
+Do NOT check for updates by running "pacman -Syu". Install pacman-contrib and run "checkupdates"
 
-If you're using Yay, I think it allows you to inspect PKGBUILDs by default. "yay -Pw" also is pretty handy to run before updates because if something requires manual intervention, it'll be posted on the front page of the arch website. If you don't want to use yay, subscribe to the rss feed or the mailing list.
-   |
+To inspect PKGBUILDs in yay do: "yay -Pw" 
 Enable paccache.timer to clear the package cache weekly
 If using an SSD, enable fstrim.timer to discard unused blocks periodically
-Setup a firewall such as ufw or firewalld
+Setup a firewall 
 Install and configure reflector to frequently update the mirrorlist automatically
 Enable Parallel Downloads in /etc/pacman.conf
 Install intel-ucode or amd-ucode microcode depending on your CPU
@@ -24,10 +23,10 @@ Edit /etc/pacman.conf and under [options] add ILoveCandy and Color. (both case s
 
 # package
     //vulkan-intel lib32-vulkan-intel
-    //wine
-    /*pacman -S --needed wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse libgpg-error lib32-libgpg-error alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama ncurses lib32-ncurses ocl-icd lib32-ocl-icd libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader*/
-
-    bluez bluez-utils virtualbox linux-headers nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader pacman-contrib reflector xorg xorg-xinit discord nnn lxappearance qt5ct arc-gtk-theme arc-icon-theme base-devel brightnessctl pavucontrol firefox flameshot keepassxc git vim
+    /*WINE: pacman -S --needed wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse libgpg-error lib32-libgpg-error alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama ncurses lib32-ncurses ocl-icd lib32-ocl-icd libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader*/
+    //BLUETOOTH: bluez bluez-utils
+    //optional: virtualbox
+    linux-headers nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader pacman-contrib reflector xorg xorg-xinit discord nnn lxappearance qt5ct arc-gtk-theme arc-icon-theme base-devel brightnessctl pavucontrol firefox flameshot keepassxc git vim
     
 # bluetoothctl
     power on 
