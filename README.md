@@ -59,7 +59,11 @@ Edit /etc/pacman.conf and under [options] add ILoveCandy and Color. (both case s
     //alt: git clone https://github.com/crevI66/die
     cd dwm ## Do this step also with st and dmenu
     sudo make clean install
-
+    ----- HOW TO PATCH ------
+    create folder "patches"
+    put "patch.diff" inside
+    patch -p1 < patches/patch.diff
+    
 # install doas
     git clone https://aur.archlinux.org/opendoas-sudo.git
     sudo make clean install
