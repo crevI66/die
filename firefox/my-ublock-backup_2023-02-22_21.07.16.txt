@@ -1,0 +1,49 @@
+{
+  "timeStamp": 1677074836902,
+  "version": "1.46.0",
+  "userSettings": {
+    "advancedUserEnabled": true,
+    "uiTheme": "dark",
+    "externalLists": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
+    "importedLists": [
+      "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
+    ],
+    "popupPanelSections": 31
+  },
+  "selectedFilterLists": [
+    "user-filters",
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-quick-fixes",
+    "ublock-abuse",
+    "ublock-unbreak",
+    "easylist",
+    "adguard-spyware-url",
+    "block-lan",
+    "easyprivacy",
+    "urlhaus-1",
+    "curben-phishing",
+    "adguard-annoyance",
+    "adguard-social",
+    "fanboy-annoyance",
+    "ublock-annoyances",
+    "plowe-0",
+    "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
+  ],
+  "hiddenSettings": {},
+  "whitelist": [
+    "about-scheme",
+    "chrome-extension-scheme",
+    "chrome-scheme",
+    "edge-scheme",
+    "moz-extension-scheme",
+    "opera-scheme",
+    "vivaldi-scheme",
+    "wyciwyg-scheme"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop\n* addthis.com * block\n* googletagservices.com * block\n* amazon-adsystem.com * block\n4chan.org google-analytics.com * block\n4chan.org adtng.com * block\n* d1ks8roequxbwa.cloudfront.net * block\n* moonicorn.network * block\n* fastcomments.com * block\n* addtoany.com * block\n* ownandthaiho.biz * block\n* googletagmanager.com * block\n* echnolog.club * block\n* a701df64ca99558ba89e27a3f7a9d61b25648e6f38e6f92c75b6.s3.amazonaws.com * block\nmega.nz 127.0.0.1 * block\n* 127.0.0.1 * block\n* ds88pc0kw6cvc.cloudfront.net * block\n* a-ads.com * block\n* gamingadult.com * block\n* d301cxwfymy227.cloudfront.net * block\n* bebi.com * block\n* googlesyndication.com * block\n* google.com.vn * block\n* blutosanchet.xyz * block\n* daumatv.xyz * block\n* mamtomtv.xyz * block\n* bundauxanh.xyz * block\n* ggcchbq01.xyz * block\n* d2v02itv0y9u9t.cloudfront.net * block\n* imrworldwide.com * block\n* scorecardresearch.com * block\nwww.youtube.com gstatic.com * block\nwww.youtube.com [ff00::] * block\n* google-analytics.com * block\n* [ff00::] * block\n* googleoptimize.com * block\n* sentry.io * block\n* infolinks.com * block\n* gigya.com * block\n* ns1p.net * block\n* inutilepiously.com * block\n* onesignal.com * block\n* snagbaudhulas.com * block\n* outbrain.com * block\n* anyclip.com * block\n* b2c.com * block\n* chartbeat.com * block\n* wfgo5vjs6cp0cdjx7bms3cn9lof2p01xho0pxgm1fd2fah3j5d8qd7x1d6eu.me * block\n* jwpltx.com * block\n* jwplayer.com * block\nanime47.com jwplayer.com * block",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true\nno-popups: phimchill.tv true\nno-popups: phimmoichill.net true\nno-remote-fonts: newtab.chrome-scheme false\nno-remote-fonts: shinshin.moe false",
+  "userFilters": "||tiktok.com^$removeparam=_d\n||tiktok.com^$removeparam=_r\n||tiktok.com^$removeparam=aweme_type\n||tiktok.com^$removeparam=checksum\n||tiktok.com^$removeparam=pic_cnt\n||tiktok.com^$removeparam=sec_user_id\n||tiktok.com^$removeparam=share_item_id\n||tiktok.com^$removeparam=share_link_id\n||tiktok.com^$removeparam=source\n||tiktok.com^$removeparam=timestamp\n||tiktok.com^$removeparam=u_code\n||tiktok.com^$removeparam=ugbiz_name\n||tiktok.com^$removeparam=user_id\n||tiktok.com^$removeparam=preview_pb\n ! 4chan.*##.reply.post:not(:has-text(/.png|.jpg|.gif|.webm/))\n||tiktok.com^$removeparam=sec_uid\n\n\n! Removes Mixes from the Main Page\nyoutube.com##ytd-rich-item-renderer #video-title-link[title*=\"Mix\"][href$=\"start_radio=1\"]:upward(ytd-rich-item-renderer)\n! Removes Mixes from the right side panel\nyoutube.com##ytd-compact-radio-renderer\n! Removes Mixes from search results\nyoutube.com##ytd-radio-renderer\n! Removes \"YouTube\" (Music) playlists from the right side panel\nyoutube.com##ytd-compact-playlist-renderer .ytd-channel-name:has-text(/^YouTube/):upward(ytd-compact-playlist-renderer)\nyoutube-nocookie.com,youtube.com##.ytp-pause-overlay, .show-video-thumbnail-button\n~youtube-nocookie.com,~youtube.com##iframe ~ #topvbar > #rvid\n/endscreen.js$script,important,domain=youtube.com\nyoutube.com##.ytp-ce-element.ytp-ce-video\nyoutube.com##.ytp-ce-element.ytp-ce-channel\nyoutube.com##.ytp-ce-element.ytp-ce-website\nyoutube.com##.ytp-cards-teaser\nyoutube.com##.ytp-ce-element.ytp-ce-playlist\nyoutube.com##.ytp-button.ytp-cards-button\nyoutube.com##.ytp-button.branding-img-container\nyoutube.com##+js(json-prune, items.0.guideSectionRenderer.items.2.guideEntryRenderer)\n##.ytd-item-section-renderer.style-scope > .ytd-shelf-renderer.style-scope:has-text(Trending Shorts)\nyoutube.com##+js(json-prune, contents.twoColumnBrowseResultsRenderer.tabs.0.tabRenderer.content.sectionListRenderer.contents.*.itemSectionRenderer.contents.0.reelShelfRenderer)\nwww.youtube.com###movie_player > .ytp-chrome-top\nwww.youtube.com##ytd-button-renderer.ytd-menu-renderer.style-scope > yt-button-shape > .yt-spec-button-shape-next--icon-leading.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal.yt-spec-button-shape-next\n! 2022-08-29 https://www.twitch.tv\nwww.twitch.tv##div.ErUdM.Layout-sc-nxg1ff-0:nth-of-type(1)\nwww.twitch.tv##div.ErUdM.Layout-sc-nxg1ff-0:nth-of-type(3)\nwww.twitch.tv##.bNdJnu.Layout-sc-nxg1ff-0\nwww.twitch.tv##div.gfEeIn.Layout-sc-nxg1ff-0 > .preview-card-carousel.ftYHa-d.InjectLayout-sc-588ddc-0 > .preview-card-carousel__child-container.emsSBc.Layout-sc-nxg1ff-0 > .preview-card-carousel__body.lhceQL.InjectLayout-sc-588ddc-0\nwww.twitch.tv##div.gfEeIn.Layout-sc-nxg1ff-0 > .preview-card-carousel.ftYHa-d.InjectLayout-sc-588ddc-0\nwww.twitch.tv##.player-overlay-background--darkness-5.player-overlay-background.fPrwsJ.Layout-sc-nxg1ff-0\nwww.twitch.tv##.iLhUed.CoreText-sc-cpl358-0\nwww.twitch.tv##.cDEtCQ.CoreText-sc-cpl358-0 > .tw-link.eaUVsQ.ScCoreLink-sc-udwpw5-0\nwww.twitch.tv##.top-bar.fmjCoJ.Layout-sc-nxg1ff-0 > div.Layout-sc-nxg1ff-0\n\n! 2022-09-04 https://www.twitch.tv\nwww.twitch.tv##.ckXJcK.Layout-sc-nxg1ff-0 > div\n\n! 2023-02-02 https://www.youtube.com\nwww.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope\n"
+}

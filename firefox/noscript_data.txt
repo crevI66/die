@@ -1,0 +1,79 @@
+{
+  "policy": {
+    "DEFAULT": {
+      "capabilities": [
+        "frame",
+        "fetch",
+        "noscript",
+        "other"
+      ],
+      "temp": false
+    },
+    "TRUSTED": {
+      "capabilities": [
+        "script",
+        "media",
+        "frame",
+        "font",
+        "noscript",
+        "other",
+        "webgl",
+        "fetch"
+      ],
+      "temp": false
+    },
+    "UNTRUSTED": {
+      "capabilities": [],
+      "temp": false
+    },
+    "sites": {
+      "trusted": [
+        "§:addons.mozilla.org",
+        "§:mozilla.net",
+        "§:noscript.net",
+        "§:hcaptcha.com",
+        "§:github.com",
+        "§:githubassets.com",
+        "§:quavergame.com",
+        "§:archlinux.org",
+        "§:nhentai.net",
+        "§:mangadex.org",
+        "https://www.youtube.com",
+        "§:googlevideo.com",
+        "https://www.redditstatic.com",
+        "https://www.reddit.com",
+        "§:4cdn.org",
+        "https://boards.4chan.org",
+        "https://static.danbo.org",
+        "https://challenges.cloudflare.com",
+        "https://boards.4channel.org",
+        "https://anime47.com",
+        "https://translate.google.com",
+        "https://pastebin.com",
+        "https://www.gstatic.com"
+      ],
+      "untrusted": [],
+      "custom": {}
+    },
+    "enforced": true,
+    "autoAllowTop": false
+  },
+  "local": {
+    "debug": false,
+    "showCtxMenuItem": true,
+    "showCountBadge": true,
+    "showFullAddresses": true,
+    "amnesticUpdates": false,
+    "storage": "local",
+    "uuid": "08f668f6-3d57-42de-ae0d-08a8a5098c17"
+  },
+  "sync": {
+    "global": false,
+    "xss": true,
+    "TabGuardMode": "global",
+    "cascadeRestrictions": false,
+    "overrideTorBrowserPolicy": false,
+    "storage": "sync"
+  },
+  "xssUserChoices": {}
+}
