@@ -60,7 +60,7 @@ Edit /etc/pacman.conf and under [options] add ILoveCandy and Color. (both case s
     sudo make clean install
     ----- HOW TO PATCH ------
     create folder "patches"
-    put "patch.diff" inside
+    touch patches/patch.diff
     patch -p1 < patches/patch.diff
     
 # install doas
